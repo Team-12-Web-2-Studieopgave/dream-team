@@ -6,6 +6,7 @@
 .produkt_grid {
   display: grid;
   grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 
 .produkt {
@@ -13,4 +14,10 @@
   height: 100px;
   width: 100px;
   margin: 10px;
+}
+
+.filter_section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
