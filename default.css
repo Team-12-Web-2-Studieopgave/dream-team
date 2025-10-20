@@ -1,0 +1,63 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f7efe7;
+  color: #2c2c2c;
+  line-height: 1.5;
+}
+
+/* HEADER */
+/* NY HEADER – minimalistisk version */
+.site_header {
+  background-color: #f7f2ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 0.8rem 2rem;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.header_logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #2c2c2c;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.header_nav {
+  position: absolute;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Knapper */
+.header_btn {
+  background-color: #f3ebe2;
+  color: #2c2c2c;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.45rem 1.2rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.header_btn:hover {
+  background-color: #d6c2a3;
+  color: #fff;
+}
