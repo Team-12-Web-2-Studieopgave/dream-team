@@ -7,17 +7,35 @@
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
+  gap: 20px;
 }
 
 .produkt {
   background-color: tomato;
   height: 200px;
   width: 200px;
-  margin: 10px;
 }
 
 .filter_section_grid {
+  font-size: x-large;
+  margin: 10px;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  flex-direction: column; /* Stack vertically */
+  gap: 6px; /* Space between options */
+  align-items: center;
+}
+
+.produkt_info{
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  gap: 6px; /* Space between options */
+}
+
+.p-title{
+font-size: medium;
+}
+
+.p-info, .p-price{
+font-size:small;
+
 }
