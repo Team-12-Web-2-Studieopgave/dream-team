@@ -1,16 +1,56 @@
+
 .divider {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 2fr;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .produkt_grid {
   display: grid;
   grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 20px;
 }
 
 .produkt {
-  background-color: tomato;
-  height: 100px;
-  width: 100px;
+  background-color: #DABC97;
+  height: 200px;
+  width: 200px;
+}
+
+.produkt_info{
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Giver plads mellem teksten på produkterne */
+  background-color: white;
+  padding-bottom: 5px;
+  width: 200px;
+}
+
+.p-title{
+font-size: medium;
+}
+
+.p-info{
+font-size:small;
+font-weight: 100;
+}
+.p-price{
+  font-size:small;
+}
+.produkt img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.filter_section_grid {
+  font-size: x-large;
   margin: 10px;
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  gap: 6px; /* Space between options */
+  margin: 0 auto;
 }

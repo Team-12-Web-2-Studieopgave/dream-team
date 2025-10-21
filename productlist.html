@@ -20,24 +20,20 @@
         </nav>
     </header>
 
-    <h1>Hello World Title</h1>
+    <h1 style="display: flex; justify-content: center; height: 150px; align-items: center;">Katalog</h1>
     <section class="divider">
-        <section class="filter_section">
-            Hello World
+        <section class="filter_section_grid">
+            <h1>Sorter efter</h1>
+            <label><input type="radio" name="sort" value="price-asc"> Pris, Lav til høj</label>
+            <label><input type="radio" name="sort" value="price-desc"> Pris, Høj til lav</label>
+            <label><input type="radio" name="sort" value="name-asc"> Navn, A til Å</label>
         </section>
 
         <section class="produkt_grid">
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
+            <!---Produkter bliver lagt her ved brug af JS-->
+        
         </section>
     </section>
+    <script src="script.js"></script>
 </body>
-
 </html>
