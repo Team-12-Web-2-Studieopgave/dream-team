@@ -1,4 +1,3 @@
-// Fetch product data from your JSON file
 fetch('produkter.json')
   .then(response => response.json())
   .then(data => {
@@ -20,9 +19,9 @@ fetch('produkter.json')
         <h1 class="p-title">${product.brand} - ${product.title}</h1>
         <h2 class="p-info">${product.description}</h2>
         <h3 class="p-price">${product.price} USD</h3>
+        <button>Køb</button>
       `;
 
       grid.appendChild(productDiv);
     });
   })
-  .catch(error => console.error('Error loading products:', error));

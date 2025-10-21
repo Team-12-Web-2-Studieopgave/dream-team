@@ -1,6 +1,9 @@
+
 .divider {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .produkt_grid {
@@ -11,15 +14,15 @@
 }
 
 .produkt {
-  background-color: rgb(100, 100, 100);
+  background-color: #DABC97;
   height: 200px;
   width: 200px;
 }
 
 .produkt_info{
   display: flex;
-  flex-direction: column; /* Stack vertically */
-  gap: 6px; /* Space between options */
+  flex-direction: column;
+  gap: 6px; /* Giver plads mellem teksten på produkterne */
   background-color: white;
   padding-bottom: 5px;
   width: 200px;
@@ -29,11 +32,13 @@
 font-size: medium;
 }
 
-.p-info, .p-price{
+.p-info{
 font-size:small;
-
+font-weight: 100;
 }
-
+.p-price{
+  font-size:small;
+}
 .produkt img {
   width: 100%;
   height: 200px;
@@ -47,5 +52,5 @@ font-size:small;
   display: flex;
   flex-direction: column; /* Stack vertically */
   gap: 6px; /* Space between options */
-  align-items: center;
+  margin: 0 auto;
 }
