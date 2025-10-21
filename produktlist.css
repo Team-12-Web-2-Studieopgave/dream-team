@@ -1,16 +1,23 @@
 .divider {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 3fr;
 }
 
 .produkt_grid {
   display: grid;
   grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 
 .produkt {
   background-color: tomato;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   margin: 10px;
+}
+
+.filter_section_grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
