@@ -306,3 +306,6 @@ footer input {
     font-size: 1rem;
   }
 }
+.hero_btn {
+  text-decoration: none; /* fjerner understregning */
+}

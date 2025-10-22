@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sælg Parfume | ScentSpace</title>
+  <link rel="stylesheet" href="sell.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site_header">
+    <h1 class="logo">ScentSpace</h1>
+    <nav class="header_nav">
+      <a href="index.html" class="header_btn">Forside</a>
+      <a href="productlist.html" class="header_btn">Katalog</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="sell_section">
+    <div class="sell_card">
+      <h2>Sælg din parfume</h2>
+      <p class="subtitle">Udfyld felterne for at oprette din annonce</p>
+
+      <form class="sell_form">
+        <label for="name">Navn *</label>
+        <input id="name" type="text" placeholder="Dit navn" required>
+
+        <label for="brand">Brand *</label>
+        <input id="brand" type="text" placeholder="F.eks. Dior" required>
+
+        <label for="desc">Beskrivelse</label>
+        <textarea id="desc" placeholder="Kort beskrivelse af din parfume"></textarea>
+
+        <label for="price">Pris (DKK)</label>
+        <input id="price" type="number" placeholder="F.eks. 500">
+
+        <label for="image">Upload billede</label>
+        <input id="image" type="file" accept="image/*">
+
+        <div class="form_actions">
+          <button type="submit" class="btn primary">Opret annonce</button>
+          <a href="index.html" class="btn secondary">Annullér</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 ScentSpace. Alle rettigheder forbeholdes.</p>
+  </footer>
+</body>
+</html>

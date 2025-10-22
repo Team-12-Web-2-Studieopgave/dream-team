@@ -1,0 +1,209 @@
+/* ===============================
+   ScentSpace Sell Page Styles
+   =============================== */
+
+:root {
+  --bg: #f7f2ec;
+  --white: #ffffff;
+  --ink: #2c2c2c;
+  --border: rgba(0, 0, 0, 0.1);
+  --accent: #d6c2a3;
+  --accent-dark: #b89f7c;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --radius: 0.8rem;
+  --font: "Poppins", sans-serif;
+  --transition: 0.25s ease;
+}
+
+/* ---------- Global reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Header ---------- */
+.site_header {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 4.5rem;
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.header_nav {
+  position: absolute;
+  right: 2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.header_btn {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  padding: 0.4rem 1.2rem;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.header_btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+}
+
+/* ---------- Sell Section ---------- */
+.sell_section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.sell_card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 25px var(--shadow);
+  padding: 2.5rem 3rem;
+  max-width: 700px;
+  width: 100%;
+}
+
+.sell_card h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #6a6a6a;
+  margin-bottom: 2rem;
+}
+
+/* ---------- Form ---------- */
+.sell_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.sell_form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.sell_form input,
+.sell_form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--white);
+  transition: var(--transition);
+}
+
+.sell_form input:focus,
+.sell_form textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(214, 194, 163, 0.25);
+  outline: none;
+}
+
+.sell_form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ---------- Buttons ---------- */
+.form_actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--white);
+}
+.primary:hover {
+  background: var(--accent-dark);
+}
+
+.secondary {
+  background: #d9d9d9;
+  color: #2c2c2c;
+}
+.secondary:hover {
+  background: #bfbfbf;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .sell_card {
+    padding: 2rem 1.5rem;
+  }
+  .form_actions {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .header_nav {
+    right: 1rem;
+  }
+}
