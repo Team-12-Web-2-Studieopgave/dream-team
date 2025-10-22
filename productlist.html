@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="produktlist.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -15,8 +16,8 @@
     <header class="site_header">
         <a href="index.html"><h1 class="header_logo">ScentSpace</h1></a>
         <nav class="header_nav">
-            <a href="sell.html" class="header_btn">SÆLG</a>
-            <a href="login.html" class="header_btn">LOGIN</a>
+            <a href="index.html" class="header_btn">FORSIDE</a>
+            <a href="productlist.html" class="header_btn">KATALOG</a>
         </nav>
     </header>
 
@@ -30,10 +31,66 @@
         </section>
 
         <section class="produkt_grid">
-            <!---Produkter bliver lagt her ved brug af JS-->
-            
+            <article class="produkt_kort" data-bg="pink">
+                    <div class="img_wrapper">
+                        <img src="img/chanel.png" alt="Chanel Coco Noir" />
+                    </div>
+                    <div class="produkt_info">
+                        <h3>Chanel Coco Noir Eau De</h3>
+                        <p class="small">50 cl, Helt Ny</p>
+                        <p>
+                            <span class="old_price">250 DKK</span>
+                            <span class="price">200 DKK</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="produkt_kort" data-bg="beige">
+                    <div class="img_wrapper">
+                        <img src="img/dolce.png" alt="Dolce Shine Eau De" />
+                    </div>
+                    <div class="produkt_info">
+                        <h3>Dolce Shine Eau De</h3>
+                        <p class="small">40 cl, Helt Ny</p>
+                        <p class="price">300 DKK</p>
+                    </div>
+                </article>
+
+                <article class="produkt_kort" data-bg="sand">
+                    <div class="img_wrapper">
+                        <img src="img/dior.png" alt="Dior J’adore" />
+                    </div>
+                    <div class="produkt_info">
+                        <h3>Dior J’adore</h3>
+                        <p class="small">20 cl, Helt Ny</p>
+                        <p class="price">200 DKK</p>
+                    </div>
+                </article>
+
+                <article class="produkt_kort" data-bg="light">
+                    <div class="img_wrapper">
+                        <img src="img/ck.png" alt="Calvin Klein CK One" />
+                    </div>
+                    <div class="produkt_info">
+                        <h3>Calvin Klein CK One</h3>
+                        <p class="small">40 cl, Helt Ny</p>
+                        <p class="price">300 DKK</p>
+                    </div>
+                </article>
+
+                <article class="produkt_kort" data-bg="pink">
+                    <div class="img_wrapper">
+                        <img src="img/chanel.png" alt="Chanel Coco Noir" />
+                    </div>
+                    <div class="produkt_info">
+                        <h3>Chanel Coco Noir Eau De</h3>
+                        <p class="small">30 cl, Helt Ny</p>
+                        <p class="price">250 DKK</p>
+                    </div>
+                </article>
         </section>
     </section>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

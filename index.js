@@ -1,7 +1,7 @@
 console.log("ScentSpace loaded…");
 
 // Container hvor produkterne skal vises
-const containers = document.querySelectorAll(".product_list_container");
+const containers = document.querySelectorAll(".product_list_container, .produkt_grid");
 
 // Hent produkter fra DummyJSON API
 fetch("https://dummyjson.com/products/category/fragrances")
@@ -36,5 +36,14 @@ function showProducts(products) {
       `;
       })
       .join("");
+
+    //  Klik-event på kortene
+    const productCards = container.querySelectorAll(".produkt_kort");
+    productCards.forEach((card, index) => {
+      const produkt = products[index];
+      card.addEventListener("click", () => {
+        window.location.href = `singleview.html?id=${produkt.id}`;
+      });
+    });
   });
 }
