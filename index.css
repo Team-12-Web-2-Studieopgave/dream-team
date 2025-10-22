@@ -12,7 +12,6 @@ body {
   line-height: 1.5;
 }
 
-
 /* Mobiltilpasning */
 @media (max-width: 768px) {
   .header_nav {
