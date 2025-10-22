@@ -62,11 +62,6 @@ body {
   color: #fff;
 }
 
-<<<<<<< HEAD
-a:link{
-  text-decoration: none;
-}
-=======
 /* FOOTER */
 footer {
   flex-shrink: 0;
@@ -90,4 +85,3 @@ footer input {
   width: 240px;
   font-size: 0.9rem;
 }
->>>>>>> produkt_igang3
