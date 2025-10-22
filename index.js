@@ -1,7 +1,7 @@
 console.log("ScentSpace loaded…");
 
 // Container hvor produkterne skal vises
-const containers = document.querySelectorAll(".product_list_container");
+const containers = document.querySelectorAll(".product_list_container, .produkt_grid");
 
 // Hent produkter fra DummyJSON API
 fetch("https://dummyjson.com/products/category/fragrances")
