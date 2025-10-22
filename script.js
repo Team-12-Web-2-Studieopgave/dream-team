@@ -1,16 +1,16 @@
-fetch('produkter.json')
-  .then(response => response.json())
-  .then(data => {
+fetch("produkter.json")
+  .then((response) => response.json())
+  .then((data) => {
     const products = data.products;
-    const grid = document.querySelector('.produkt_grid');
+    const grid = document.querySelector(".produkt_grid");
 
     // Clear any existing content
-    grid.innerHTML = '';
+    grid.innerHTML = "";
 
     // Loop through each product
-    products.forEach(product => {
-      const productDiv = document.createElement('div');
-      productDiv.classList.add('produkt_info');
+    products.forEach((product) => {
+      const productDiv = document.createElement("div");
+      productDiv.classList.add("produkt_info");
 
       productDiv.innerHTML = `
         <div class="produkt">
@@ -24,4 +24,4 @@ fetch('produkter.json')
 
       grid.appendChild(productDiv);
     });
-  })
+  });
