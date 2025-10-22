@@ -61,3 +61,7 @@ body {
   background-color: #d6c2a3;
   color: #fff;
 }
+
+a:link{
+  text-decoration: none;
+}
