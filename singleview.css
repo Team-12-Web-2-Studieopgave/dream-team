@@ -7,6 +7,13 @@ h1 {
   margin-bottom: 1rem;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f7f2ec;
+  color: #2c2c2c;
+  line-height: 1.5;
+}
+
 /****** PRODUKTER ********/
 
 /* PRODUKTPRISER */
@@ -47,7 +54,6 @@ h1 {
 /* Baggrund og base layout */
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f7f2ec;
   color: #2c2c2c;
   line-height: 1.6;
   margin: 0;
@@ -179,69 +185,40 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
-    column-gap: 4rem;
-    row-gap: 1rem;
-    max-width: 1100px;
+    column-gap: 5rem;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
+    text-align: left;
   }
 
-  /* Billedet venstre */
+  .product_info {
+    gap: 20rem;
+  }
+
+  /* Venstre kolonne */
   .product_billede {
     grid-column: 1;
+    align-self: start;
   }
 
   .product_image img {
     width: 100%;
-    max-height: 480px;
+    max-width: 520px;
     object-fit: cover;
-    border-radius: 4px;
-    margin: 0;
+    border-radius: 6px;
   }
 
-  /* Titel og tekst højre */
+  /* Højre kolonne (alt indhold) */
   .indhold h1 {
     grid-column: 2;
-    margin: 0 0 0.5rem 0;
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    margin: 0 0 0.8rem 0;
   }
 
-  .indhold h2 {
-    grid-column: 2;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #333;
-    margin-bottom: 1.5rem;
-    max-width: 90%;
-  }
-
-  /* Pris, cl og ny/brugt */
-  .product_numbers {
-    grid-column: 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .old_price {
-    text-decoration: line-through;
-    opacity: 0.6;
-  }
-
-  .price {
-    font-weight: bold;
-  }
-
-  .small {
-    color: #555;
-  }
-
-  /* Reviews */
   .product_reviews {
     grid-column: 2;
     font-size: 0.9rem;
@@ -250,25 +227,54 @@ body {
     margin-bottom: 1rem;
   }
 
-  /* Beskrivelse */
+  .product_numbers {
+    grid-column: 2;
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .old_price {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  .price {
+    font-weight: 700;
+  }
+
+  .small {
+    color: #555;
+  }
+
+  .indhold h2 {
+    grid-column: 2;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333;
+    margin: 0 0 1.8rem 0;
+    max-width: 85%;
+  }
+
   .beskrivelse {
     grid-column: 2;
-    max-width: 480px;
+    max-width: 500px;
     line-height: 1.8;
     font-size: 0.95rem;
     color: #2c2c2c;
+    margin: 0 0 2.2rem 0;
   }
 
-  /* Knap */
   .kurv_knap {
     grid-column: 2;
-    margin-top: 2rem;
+    margin: 0;
   }
 
   .kurv_knap button {
     background-color: #f2e6cf;
     border: none;
-    padding: 0.9rem 2rem;
+    padding: 1rem 2.2rem;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 500;
@@ -279,7 +285,17 @@ body {
     background-color: #e0d1b5;
   }
 
-  .product_billede {
-    align-self: start;
+  /* Sikrer at body fylder hele skærmen */
+  html,
+  body {
+    height: 100%;
+    background-color: #f7f2ec; /* samme farve som resten af siden */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Main udfylder mellemrum */
+  main.indhold {
+    flex: 1;
   }
 }

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScentSpace</title>
+    <title>Document</title>
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="singleview.css">
 </head>
 
-<body>
 
+<body>
     <header class="site_header">
         <h1 class="header_logo">ScentSpace</h1>
         <nav class="header_nav">
@@ -19,42 +19,53 @@
         </nav>
     </header>
 
-
-    <section class="indhold">
-        <section class="product_billede">
+    <main class="indhold">
+        <!-- Venstre kolonne -->
+        <div class="product_billede">
             <div class="product_image">
-                <img src="img/produktbillede.svg" alt="Chanel Coco Noir">
+                <img src="img/produktbillede.svg" alt="Chanel Coco Noir" />
             </div>
-        </section>
+        </div>
 
-        <h1 style="display: flex; justify-content: center;">Chanel - Perfurme spray</h1>
-        <h2>En sofistikeret duft, der fanger essensen af moderne elegance.</h2>
+        <!-- Højre kolonne -->
+        <div class="product_info">
+            <h1 style="display: flex; justify-content: center;">Chanel - Perfurme spray</h1>
+            <h2>En sofistikeret duft, der fanger essensen af moderne elegance.</h2>
 
-        <section class="product_numbers">
-            <p class="old_price line_through">250 DKK</p>
-            <span class="price">200 DKK</span>
-            <p class="small">50 cl, Helt Ny</p>
-        </section>
+            <div class="product_numbers">
+                <p class="old_price line_through">250 DKK</p>
+                <span class="price">200 DKK</span>
+                <p class="small">50 cl, Helt Ny</p>
+            </div>
 
-        <section class="product_reviews">
-            <p> ★★★★★ (15 anmeldelser)
-                Brugernes favoritduft 2025
-            </p>
-        </section>
+            <div class="product_reviews">
+                <p>★★★★★ (15 anmeldelser) Brugernes favoritduft 2025</p>
+            </div>
 
-        <section class="beskrivelse">
-            <p>Chanel Perfume Spray forener elegance og lethed i én enkel gestus — skabt til dem, der
-                foretrækker subtil luksus frem
-                for overflod.Hver dråbe føles som et øjeblik af ro, et åndedrag af ren selvtillid.</p>
-        </section>
+            <div class="beskrivelse">
+                <p>
+                    Chanel Perfume Spray forener elegance og lethed i én enkel gestus — skabt til dem,
+                    der foretrækker subtil luksus frem for overflod. Hver dråbe føles som et øjeblik af ro,
+                    et åndedrag af ren selvtillid.
+                </p>
+            </div>
 
-        <section class="kurv_knap">
-            <button>Læg i kurv</button>
-        </section>
+            <div class="kurv_knap">
+                <button>Læg i kurv</button>
+            </div>
+        </div>
 
-    </section>
+    </main>
 
+    <footer>
+        <label for="email">Tilmeld dig vores nyhedsbrev</label>
+        <input type="email" id="email" name="email" placeholder="eksempel@mail.com" />
+    </footer>
+
+
+    <script src="singleview.js"></script>
 </body>
+
 
 
 </html>

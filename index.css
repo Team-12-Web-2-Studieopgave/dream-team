@@ -256,26 +256,6 @@ body {
   color: #fff;
 }
 
-/* FOOTER */
-footer {
-  background-color: #f0e4d0;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-footer label {
-  display: block;
-  font-size: 0.85rem;
-  margin-bottom: 0.5rem;
-}
-
-footer input {
-  padding: 0.6rem;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  width: 250px;
-}
-
 /* DESKTOP */
 @media (min-width: 1024px) {
   .hero_img {

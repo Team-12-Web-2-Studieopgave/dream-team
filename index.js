@@ -36,5 +36,14 @@ function showProducts(products) {
       `;
       })
       .join("");
+
+    //  Klik-event på kortene
+    const productCards = container.querySelectorAll(".produkt_kort");
+    productCards.forEach((card, index) => {
+      const produkt = products[index];
+      card.addEventListener("click", () => {
+        window.location.href = `singleview.html?id=${produkt.id}`;
+      });
+    });
   });
 }
